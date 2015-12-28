@@ -1,0 +1,11 @@
+{
+   "author" : "Rahul Sinha",
+   "name"   : "censorify",
+   "version" : "0.1.1",
+   "description" : "Censor words out of text",
+   "main"  : "censortext",
+   "dependencies" : {},
+   "engines" : {
+      "node" : "*"
+   }
+}
