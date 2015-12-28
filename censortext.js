@@ -4,9 +4,10 @@
 var censoredWords=["mad","bad"]
 
 function censor(inStr){
-	for (word in censoredWords){
-		inStr.replace(word,'****')
+	for (index in censoredWords){
+		inStr=inStr.replace(censoredWords[index],'****')
 	}
+	return inStr
 }
 
 function addCensorWord(word){
@@ -17,6 +18,6 @@ function getCensoredWords(){
 	return censoredWords
 }
 
-exports.sensor=sensor
+exports.censor=censor
 exports.addCensorWord=addCensorWord
 exports.getCensoredWords=getCensoredWords
