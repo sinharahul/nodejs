@@ -2,10 +2,13 @@
  * Take start and end and return an array 
  * that produces the range
  */
-function range(start,end){
-	if(start > end)return
+function range(start,end,step){
+	if(start > end && step > 0)return
+	if (step==undefined) {
+		step=1
+	}
 	var arr=[]	
-	for(var i=start;i<=end;i++ ){
+	for(var i=start;i<=end;i+=step ){
 		arr.push(i)
 	}	
 	return arr
