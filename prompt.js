@@ -10,12 +10,12 @@ var theNumber;
     console.log('Command-line input received:');
     console.log('number ' + result.number);
     theNumber=result.number
+    var no = Number(theNumber);
+    console.log("The number received is ",no)
   });
 
   function onErr(err) {
     console.log(err);
     return 1;
   }
-var no = Number(theNumber);
-console.log("The number received is ",no)
 
