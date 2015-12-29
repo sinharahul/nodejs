@@ -10,4 +10,13 @@ function range(start,end){
 	}	
 	return arr
 }
-console.log(range(1,100))
+function sum(arr){
+	var sum=0
+	for (var i = 0; i < arr.length; i++) {
+		sum+=arr[i]
+	}
+	return sum
+}
+//console.log(range(1,100))
+console.log(sum([1,5,7]))
+console.log(sum(range(1,100)))
