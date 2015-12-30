@@ -8,9 +8,16 @@ function range(start,end,step){
 		step=1
 	}
 	var arr=[]	
-	for(var i=start;i<=end;i+=step ){
+	if(step < 0){
+		for(var i=end;i>=start;i+=step ){
 		arr.push(i)
-	}	
+		}
+	}
+	else {
+		for(var i=start;i<=end;i+=step ){
+		arr.push(i)
+		}	
+    }
 	return arr
 }
 function sum(arr){
@@ -20,6 +27,6 @@ function sum(arr){
 	}
 	return sum
 }
-//console.log(range(1,100))
+console.log(range(1,100,-2))
 console.log(sum([1,5,7]))
 console.log(sum(range(1,100)))
