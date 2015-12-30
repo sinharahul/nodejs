@@ -8,7 +8,7 @@ var options = {
 
   port: '80',
 
-  method: 'POST'
+  method: 'GET'
 
 };
 

@@ -5,3 +5,18 @@ var accountObj = JSON.parse(accountStr);
 console.log(accountObj.name);
 
 console.log(accountObj.members);
+var accountObj = {
+
+  name: "Baggins",
+
+  number: 10645,
+
+  members: ["Frodo, Bilbo"],
+
+  location: "Shire"
+
+};
+
+var accountStr = JSON.stringify(accountObj);
+
+console.log(accountStr);
